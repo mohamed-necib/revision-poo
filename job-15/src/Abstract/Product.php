@@ -1,5 +1,12 @@
 <?php
-require_once 'Category.php';
+
+namespace App\Abstract;
+
+use App\Category;
+use PDO;
+use PDOException;
+use DateTime;
+
 abstract class Product
 {
     protected $db = null;
@@ -238,10 +245,10 @@ abstract class Product
     }
 
     abstract public function findOneById(int $id);
-   
+
 
     abstract public function findAll();
-    
+
 
     /**
      * Create a new product in database
@@ -318,7 +325,7 @@ abstract class Product
         ]);
 
         // Vérification du bon fonctionnement de la requete
-       
+
         if ($request) {
             return $this;
         } else {

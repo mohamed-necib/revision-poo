@@ -1,8 +1,9 @@
-
 <?php
-
-require_once 'Product.php';
-require_once 'SockableInterface.php';
+namespace App;
+use App\Abstract\Product;
+use App\Interface\SockableInterface;
+use DateTime;
+use PDO;
 
 
 // class Clothing extending from Product

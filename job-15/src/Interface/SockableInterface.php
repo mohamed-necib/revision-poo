@@ -1,5 +1,5 @@
 <?php
-
+namespace App\Interface;
 //Interfaces
 
 interface SockableInterface

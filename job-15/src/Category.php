@@ -1,5 +1,9 @@
 <?php
-require_once 'Product.php';
+namespace App;
+use PDO;
+use DateTime;
+use App\Abstract\Product;
+use App\Interface\SockableInterface;
 class Category
 {
 

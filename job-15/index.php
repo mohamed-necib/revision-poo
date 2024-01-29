@@ -1,9 +1,15 @@
 <?php
 
-require_once 'Product.php';
-require_once 'Category.php';
-require_once 'Clothing.php';
-require_once 'Electronic.php';
+//Autoload
+require_once 'vendor/autoload.php';
+
+//Classes
+
+use App\Product;
+use App\Clothing;
+use App\Electronic;
+use App\Category;
+
 
 
 $clothing = new Clothing();
